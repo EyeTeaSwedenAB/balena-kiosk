@@ -1,0 +1,14 @@
+type: sw.application
+name: eyetea-kiosk
+version: 1.0.0
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/balena-labs-projects/browser'
+data:
+  applicationEnvironmentVariables:
+    LAUNCH_URL: "https://www.eyetea.se"
+    KIOSK: 1
+    EXTRA_FLAGS: "--disable-features=Translate"
+  defaultDeviceType: intel-nuc
